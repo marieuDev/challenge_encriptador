@@ -1,11 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css" >
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    </head>
+                
+    <body class="fondo-general">
+
+        <header> 
+            <img src="Img/Logo.svg" class="logo">
+        </header>
+
+        <main>
+            <div class="contenedor-principal">
+                <div class="caja-formulario">
+                    <form>
+                
+                        <textarea cols="70" rows="10" id="textoIngresado" class="cajadetexto" required>Ingrese el texto aquí</textarea>
+                        <section class="caja-alerta">
+                            <img src="Img/exclamacion.svg" class="exclamacionalerta"><legend class="textoalerta">Solo letras minúsculas y sin acentos</legend>
+                        </section>
+        
+                        <section class="botonera">
+                            <input type="button" name="encriptar"  value="Encriptar" id="encriptar" class="boton">
+                            <input type="button" name="desencriptar" id="desencriptar" value="Desencriptar" class="boton">
+                        </section>
+                        
+                    </form>
+                </div>
     
-</body>
+                <div class="caja-resultado">
+                    <div class="mensaje-resultado" id="mensaje-vacio">
+                        <img src= "Img/personaje.svg" alt="Joven masculino sentado con una lupa en su mano observando un diamante" class="personaje">
+                        <h2>Ningún mensaje fue encontrado</h2>
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>    
+                    </div>
+                    <div class="mensaje-resultado" id="mensaje-procesado">
+                        <div id="impresionParametros"></div>
+                        <input type="button" name="copiar" id="copiar" value="Copiar texto" class="boton">
+                    </div>               
+                </div>  
+            </div>   
+        </main>
+
+        <footer> 
+            <div class="contenedor-piedepagina">
+                <div class="hechopor">
+                    <img src="Img/logo-heidy-livelongandprosper.png" alt="Logo color blanco con una mezcla entre una H y la mano con el símbolo de live long and prosper">
+                    <p class="copyright"> &copy Derechos reservados, 2023.</p> 
+                    <p class="copyright">Hecho por Marielos Velasco para Alura Latam</p>
+                </div>
+                <div class="seguime">
+                    <p class="copyright"> Seguime en redes sociales </p>
+                    <div class="botonesredes">
+                        <a title="LinkedIn" href="https://www.linkedin.com/in/sancarlena77/"><img src="Imagenes/iconmonstr-linkedin-5.svg" class="redes-logo"></a>
+                        <a title="GitHub" href="https://github.com/sancarlena77/"><img src="Imagenes/iconmonstr-github-5.svg" class="redes-logo"></a>
+                        <a title="Twitter" href="https://twitter.com/sancarlena77/"><img src="Imagenes/iconmonstr-twitter-5.svg" class="redes-logo"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="encriptador.js"></script>
+
+    </body>
+
 </html>
