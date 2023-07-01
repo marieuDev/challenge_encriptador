@@ -11,64 +11,62 @@
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&family=Ubuntu:ital,wght@0,300;1,500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     </head>
                 
-    <body class="fondo-general">
+    <body class="fondo">
 
         <header> 
             <img src="Img/Logo.svg" class="logo">
         </header>
 
         <main>
-            <div class="contenedor-principal">
-                <div class="caja-formulario">
+            <section class="encabezado">
+                <div class="caja_formulario">
                     <form>
-                
-                        <textarea cols="70" rows="10" id="textoIngresado" class="cajadetexto" required>Ingrese el texto aquí</textarea>
-                        <section class="caja-alerta">
+                        <textarea cols="70" rows="10" id="textoIngresado" class="caja_texto" required>Ingrese el texto aquí</textarea>
+                        <div class="caja_alerta">
                             <img src="Img/exclamacion.svg" class="exclamacionalerta"><legend class="textoalerta">Solo letras minúsculas y sin acentos</legend>
-                        </section>
+                        </div>
         
-                        <section class="botonera">
+                        <div class="botones">
                             <input type="button" name="encriptar"  value="Encriptar" id="encriptar" class="boton">
                             <input type="button" name="desencriptar" id="desencriptar" value="Desencriptar" class="boton">
-                        </section>
-                        
+                        </div>
                     </form>
                 </div>
     
-                <div class="caja-resultado">
-                    <div class="mensaje-resultado" id="mensaje-vacio">
-                        <img src= "Img/personaje.svg" alt="Joven masculino sentado con una lupa en su mano observando un diamante" class="personaje">
+                <div class="caja_resultado">
+                    <div class="mensaje_resultado" id="mensaje-vacio">
+                        <img src= "Img/personaje.svg" alt="Joven sentado con una lupa en su mano observando un diamante" class="personaje">
                         <h2>Ningún mensaje fue encontrado</h2>
                         <p>Ingresa el texto que desees encriptar o desencriptar.</p>    
                     </div>
-                    <div class="mensaje-resultado" id="mensaje-procesado">
-                        <div id="impresionParametros"></div>
+                    <div class="texto_resultado" id="mensaje-procesado">
+                        <div id="salida"></div>
                         <input type="button" name="copiar" id="copiar" value="Copiar texto" class="boton">
                     </div>               
                 </div>  
-            </div>   
+            </section>   
         </main>
 
         <footer> 
-            <div class="contenedor-piedepagina">
-                <div class="hechopor">
-                    <img src="Img/logo-heidy-livelongandprosper.png" alt="Logo color blanco con una mezcla entre una H y la mano con el símbolo de live long and prosper">
+            <section class="piedepagina">
+                <div class="autor">
                     <p class="copyright"> &copy Derechos reservados, 2023.</p> 
                     <p class="copyright">Hecho por Marielos Velasco para Alura Latam</p>
                 </div>
-                <div class="seguime">
-                    <p class="copyright"> Seguime en redes sociales </p>
+                <div class="redes">
+                    <p class="copyright"> Visita mis redes </p>
                     <div class="botonesredes">
-                        <a title="LinkedIn" href="https://www.linkedin.com/in/sancarlena77/"><img src="Imagenes/iconmonstr-linkedin-5.svg" class="redes-logo"></a>
-                        <a title="GitHub" href="https://github.com/sancarlena77/"><img src="Imagenes/iconmonstr-github-5.svg" class="redes-logo"></a>
-                        <a title="Twitter" href="https://twitter.com/sancarlena77/"><img src="Imagenes/iconmonstr-twitter-5.svg" class="redes-logo"></a>
+                        <a title="LinkedIn" href="https://www.linkedin.com/in/sancarlena77/"><img src="Img/linkedin.svg" class="redes-logo"></a>
+                        <a title="GitHub" href="https://github.com/sancarlena77/"><img src="Img/github.svg" class="redes-logo"></a>
+                        <a title="Twitter" href="https://twitter.com/sancarlena77/"><img src="Img/twitter.svg" class="redes-logo"></a>
                     </div>
                 </div>
-            </div>
+            </section>
         </footer>
         
         <script src="encriptador.js"></script>
