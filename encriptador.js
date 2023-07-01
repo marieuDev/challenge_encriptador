@@ -11,7 +11,7 @@
     var copiar = document.getElementById("copiar");
         copiar.addEventListener("click", (event) => copiarTexto()); 
 
-    var impresionParametros = document.getElementById("impresionParametros");
+    var salida = document.getElementById("salida");
     var htmlParametros = "";
 
     var mensajeVacio = document.getElementById("mensaje-vacio");
@@ -84,9 +84,9 @@
                 }  
             }
             htmlParametros = "";
-            var impresionParametros = document.getElementById("impresionParametros");
+            var salida = document.getElementById("salida");
             htmlParametros += "Su texto encriptado es: "+ textoProcesado;
-            impresionParametros.innerHTML = htmlParametros;
+            salida.innerHTML = htmlParametros;
             mensajeVacio.style.display = "none";
             mensajeProcesado.style.visibility = "visible";
         } else {
@@ -106,9 +106,9 @@
                 }
             }
             htmlParametros = "";
-            var impresionParametros = document.getElementById("impresionParametros");
+            var salida = document.getElementById("salida");
             htmlParametros += "Su texto desencriptado es: "+ textoProcesado;
-            impresionParametros.innerHTML = htmlParametros;
+            salida.innerHTML = htmlParametros;
             mensajeVacio.style.display = "none";
             mensajeProcesado.style.visibility = "visible";
         } else {
